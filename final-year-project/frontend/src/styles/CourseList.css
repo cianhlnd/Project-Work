@@ -1,0 +1,42 @@
+.course-list-container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-container {
+  border: 2px solid black;
+  color: white;
+  background-color: darkorange;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: auto;
+}
+
+.book-btn {
+  width: 60%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 10px; 
+  background: linear-gradient(to right, forestgreen, lightgreen);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+.book-btn:hover {
+  background: lightgreen;
+}

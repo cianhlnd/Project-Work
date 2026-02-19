@@ -1,0 +1,7 @@
+.search {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 22.5%;
+    left: 50%; 
+    text-align: center; 
+}

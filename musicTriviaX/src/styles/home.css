@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  height: 100vh;
+}
+/*Joint stlyings for different buttons*/
+.connect-button,
+.start-button,
+.token-button, .stats-button {
+  position: absolute;
+  font-size: 25px;
+  background-color: forestgreen;
+  color: white;
+  width: 300px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  transform: translateX(-50%);
+}
+/*individual styling for connect button*/
+.connect-button {
+  padding: 10px 30px;
+  top: 40%;
+  left: 50%;
+}
+/*individual styling for start button*/
+.start-button {
+  padding: 10px 30px;
+  top: 66%;
+  left: 50%;
+  text-decoration: none;
+}
+/*individual styling for stats button*/
+.stats-button {
+  padding: 10px 30px;
+  top: 79%;
+  left: 50%;
+  text-decoration: none;
+}
+/*individual styling for token button*/
+.token-button {
+  padding: 10px 0px; 
+  top: 53%;
+  left: 50%;
+}
+/*hover functions for buttons*/
+.connect-button:hover,
+.start-button:hover,
+.token-button:hover, .stats-button:hover {
+  background-color: lightgreen;
+}
+/*layout for logo*/
+.logo-img {
+  width: 175px; 
+  height: auto;
+}
+/*positioning for logo*/
+.logo {
+  position: absolute;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  top: 10%; 
+  left: 50%;
+}

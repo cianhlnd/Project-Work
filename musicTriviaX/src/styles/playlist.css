@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+/*container to layout playlist buttons*/
+.playlist-container {
+  text-align: center;
+  transform: translateY(-350%);
+}
+/*Styling for back button*/
+.back-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: forestgreen;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-left: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*hover functions*/
+.playlist-button:hover, .back-button:hover {
+  background-color: lightgreen;
+}
+/*getting rid of page link in button*/
+.link-style {
+  text-decoration: none;
+  color: white;
+}
+/*style for dynamically generated playlist buttons*/
+.playlist-button {
+  display: flex;
+  background-color: forestgreen;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  transform: translateY(400%);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+/*postioning for content inside playlist buttons*/
+.playlist-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+/*styling for image*/
+.playlist-image {
+  width: 35%;
+  height: 100%;
+  border-radius: 5px;
+}
+/*styling for text*/
+.playlist-text {
+  width: 65%;
+  font-size: 20px;
+}

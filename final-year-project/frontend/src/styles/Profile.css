@@ -1,0 +1,43 @@
+.profile-container {
+    width:350px;
+    height: 250px;
+    position:relative;
+    margin: 6%auto;
+    background: darkorange;
+    padding: 5px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.speech-bubble {
+    position: absolute;
+    width: 200px; 
+    height: 200px; 
+    right: 20px;
+    top: 60%;
+    transform: translateY(-50%); 
+}
+.logout-btn {
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,forestgreen, lightgreen);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    margin-top:20px;
+}
+.logout-btn:hover {
+    background: lightgreen;
+}
+.speech-text {
+    text-align: center; 
+    top:35%;
+    position: absolute;
+}

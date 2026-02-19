@@ -1,0 +1,10 @@
+.about-header {
+  text-align: center;
+}
+.about-text {
+  position: absolute;
+  top: 30%;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+/*used for Round header*/
+.round {
+  font-size: 30px;
+  position: absolute;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  color: black;
+  margin-top: 5px;
+  left: 50%;
+}
+/*Used for the game */
+.game-container {
+  text-align: center;
+}
+/*Used for the game options*/
+button {
+  display: block;
+  margin: 10px auto; 
+  padding: 15px 0px;
+  width: 500px;
+  font-size: 15px;
+  background-color: forestgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  top: 60%;
+  transform: translateY(440%);
+}
+/*when button is disabled*/
+button:disabled {
+  background-color: grey;
+  cursor: auto;
+}
+/*hover function*/
+button:hover {
+  background-color: lightgreen;
+}
+button:disabled:hover {
+  background-color: grey;
+  cursor: auto;
+}
+
+/*Layout for user's score during game*/
+.score {
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  right: 20px;
+  top: 20%; 
+}
+
+/*Style for time it took user to choose an option*/
+.time-score {
+  font-size: 25px;
+  position: absolute;
+  color:black;
+  right:20px;
+  top: 10%; 
+}
+/*Styling for the game countdown*/
+.countdown {
+  font-size: 25px;
+  position: absolute;
+  color:black;
+  margin-left:20px;
+  top: 10%; 
+}
+/*Styling for volume sliding and label*/
+.volume {
+  font-size: 25px;
+  margin-left:20px;
+  position: absolute;
+  top: 20%; 
+}
+/*Positioning for timer*/
+.timer {
+  position: absolute;
+  top: 10%; 
+  transform: translateX(-50%);
+  left: 50%
+}

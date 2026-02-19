@@ -1,0 +1,15 @@
+C:\Users\Cian\Documents\Assignment 04\bin\Debug\net6.0\Assignment 04.exe
+C:\Users\Cian\Documents\Assignment 04\bin\Debug\net6.0\Assignment 04.deps.json
+C:\Users\Cian\Documents\Assignment 04\bin\Debug\net6.0\Assignment 04.runtimeconfig.json
+C:\Users\Cian\Documents\Assignment 04\bin\Debug\net6.0\Assignment 04.dll
+C:\Users\Cian\Documents\Assignment 04\bin\Debug\net6.0\Assignment 04.pdb
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.csproj.AssemblyReference.cache
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.AssemblyInfoInputs.cache
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.AssemblyInfo.cs
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.csproj.CoreCompileInputs.cache
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.dll
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\refint\Assignment 04.dll
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.pdb
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\Assignment 04.genruntimeconfig.cache
+C:\Users\Cian\Documents\Assignment 04\obj\Debug\net6.0\ref\Assignment 04.dll

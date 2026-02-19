@@ -1,0 +1,77 @@
+.u8s-header{
+  position: absolute;
+  border-radius: 5px;
+  transform: translate(-50%,-75px);
+  color: black;
+  left: 50%;
+}
+
+.image-download-container {
+  margin-top: 80px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-download {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.download-button {
+  width:40%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right,darkorange, rgb(255, 166, 1));
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.download-button:hover {
+  background: rgb(255, 166, 1);
+}
+.review-button {
+  width:100%;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: linear-gradient(to right,darkorange, rgb(255, 166, 1));
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.review-button:hover {
+  background: rgb(255, 166, 1);
+}
+
+.review-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: flex-end; 
+  padding: 0;
+}
+
+.all-button {
+  width:50%;
+  height: 10%;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: linear-gradient(to right,darkorange, rgb(255, 166, 1));
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 10px);
+}

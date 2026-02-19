@@ -1,0 +1,98 @@
+@startuml
+class Program {
+    + {static} addShape(s:string, canvas:Canvas, user:User) : void
+    {static} Main() : void
+}
+class Canvas {
+    + Add(s:Shape) : void
+    + Remove() : Shape
+    + Canvas()
+    + <<override>> ToString() : string
+}
+abstract class Shape {
+    + name : string? <<get>> <<set>>
+    + strokeWidth : int <<get>> <<set>>
+    + stroke : string? <<get>> <<set>>
+    + fill : string? <<get>> <<set>>
+    + <<override>> ToString() : string
+}
+class Rectangle {
+    + x : int <<get>> <<set>>
+    + y : int <<get>> <<set>>
+    + w : int <<get>> <<set>>
+    + h : int <<get>> <<set>>
+    + Rectangle(x:int, y:int, w:int, h:int)
+    + <<override>> ToString() : string
+}
+class Circle {
+    + cx : int <<get>> <<set>>
+    + cy : int <<get>> <<set>>
+    + radius : int <<get>> <<set>>
+    + Circle(x:int, y:int, r:int)
+    + <<override>> ToString() : string
+}
+class Ellipse {
+    + cx : int <<get>> <<set>>
+    + cy : int <<get>> <<set>>
+    + rx : int <<get>> <<set>>
+    + ry : int <<get>> <<set>>
+    + Ellipse(x:int, y:int, r1:int, r2:int)
+    + <<override>> ToString() : string
+}
+class Line {
+    + x1 : int <<get>> <<set>>
+    + y1 : int <<get>> <<set>>
+    + x2 : int <<get>> <<set>>
+    + y2 : int <<get>> <<set>>
+    + Line(x:int, y:int, a:int, b:int)
+    + <<override>> ToString() : string
+}
+class Polyline {
+    + coord : string <<get>> <<set>>
+    + Polyline(s:string)
+    + <<override>> ToString() : string
+}
+class Polygon {
+    + coord : string <<get>> <<set>>
+    + Polygon(s:string)
+    + <<override>> ToString() : string
+}
+class User {
+    + UndoCount : int <<get>>
+    + RedoCount : int <<get>>
+    + User()
+    + Reset() : void
+    + Action(command:Command) : void
+    + Undo() : void
+    + Redo() : void
+}
+abstract class Command {
+    + {abstract} Do() : void
+    + {abstract} Undo() : void
+}
+class AddShapeCommand {
+    + AddShapeCommand(s:Shape, c:Canvas)
+    + <<override>> Do() : void
+    + <<override>> Undo() : void
+}
+Program +-- Canvas
+Program +-- Shape
+Program +-- Rectangle
+Shape <|-- Rectangle
+Program +-- Circle
+Shape <|-- Circle
+Program +-- Ellipse
+Shape <|-- Ellipse
+Program +-- Line
+Shape <|-- Line
+Program +-- Polyline
+Shape <|-- Polyline
+Program +-- Polygon
+Shape <|-- Polygon
+Program +-- User
+Program +-- Command
+Program +-- AddShapeCommand
+Command <|-- AddShapeCommand
+AddShapeCommand --> "shape" Shape
+AddShapeCommand --> "canvas" Canvas
+@enduml

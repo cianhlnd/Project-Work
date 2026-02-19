@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+/*styling for page header*/
+.h1 {
+  font-size: 25px;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  color: black;
+  left: 50%;
+  margin-top: 5px;
+}
+/*styling for play song buttons*/
+.play-song-button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 0px;
+  width: 200px;
+  font-size: 20px;
+  background-color: forestgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  top: 10%;
+  right: 20%;
+  transform: translate(140%, -150%);
+}
+/*hover functions*/
+.summary-button:hover, .home-button:hover, .play-again-button:hover {
+  background-color: lightgreen;
+}
+/*when button is disabled*/
+.summary-button:disabled {
+  background-color: grey;
+  cursor: auto;
+}
+/*stlying for stopping audio button*/
+.stop-button {
+  display: inline;
+  position: absolute;
+  margin: 10px auto;
+  padding: 15px 0px;
+  width: 150px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  top: 10%;
+  right: 20%;
+  transform: translate(125%, 37.5%);
+}
+
+.stop-button:hover {
+  background-color: lightcoral;
+}
+/*styling for play game again button*/
+.play-again-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: forestgreen;
+  position: absolute;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  width: 150px;
+  height: 100px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  transform: translateY(175px);
+  left: 5%;
+  top: 30%;
+}
+/*styling for home button*/
+.home-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: forestgreen;
+  position: absolute;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  width: 150px;
+  height: 100px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  transform: translateY(150px);
+  left: 5%;
+  top: 10%;
+}
+/*styling for user's final score*/
+.final-score {
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  left: 20px;
+  top: 15%;
+}
+/*styling for correct songs*/
+.correct-songs {
+  font-size: 25px;
+  position: absolute;
+  color: black;
+  left: 20px;
+  top: 20%;
+}

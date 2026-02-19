@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+/*back button styling*/
+.back-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: forestgreen;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-left: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*hover function*/
+.back-button:hover {
+  background-color: lightgreen;
+}
+/*container for layout of stats*/
+.stats-container {
+  margin-top: 75px;
+}
