@@ -1,0 +1,26 @@
+{
+    "RotationGroups": [
+		"ExampleGroup1",
+		"ExampleGroup2"
+    ],
+    "DepartmentGroups": {
+        "Department1": ["Example1"],
+        "Department2": ["Example2"]
+    },
+    "DepartmentNameMap": {
+        "Department1": "Department1",
+		"Department2": "Department2"
+    },
+    "DepartmentOfficeMap": {
+        "Department1": "Floor 1",
+		"Department2": "Floor 2"
+    },
+    "DepartmentAliases": {
+        "dep1": "Department1",
+		"dep2": "Department2"
+    },
+	"SharedMailbox": {
+		"Identity": "Department1@company.com",
+		"Departments": ["Department1"]
+	}
+}
