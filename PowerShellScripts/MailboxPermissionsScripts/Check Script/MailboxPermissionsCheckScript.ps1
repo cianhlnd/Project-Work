@@ -1,3 +1,5 @@
+#Requires -Modules ExchangeOnlineManagement
+
 # Connect to Exchange Online if not already connected
 Try {
     Get-OrganizationConfig -ErrorAction Stop | Out-Null

@@ -1,3 +1,5 @@
+#Requires -Modules ActiveDirectory, ExchangeOnlineManagement
+
 <#
 Post-AD leaver stage (EXO-only):
  - Converts mailbox to shared in Exchange Online

@@ -1,3 +1,5 @@
+#Requires -Modules ExchangeOnlineManagement
+
 ## Connect to Exchange Online if not already connected
 $ExistingConnection = Get-ConnectionInformation -ErrorAction SilentlyContinue |
     Where-Object { $_.State -eq "Connected" -and $_.Name -like "ExchangeOnline*" }

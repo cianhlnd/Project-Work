@@ -1,3 +1,5 @@
+#Requires -Modules ActiveDirectory, ExchangeOnlineManagement
+
 [CmdletBinding(SupportsShouldProcess=$true, ConfirmImpact='Medium')]
 param(
     [Parameter(Mandatory=$true)]

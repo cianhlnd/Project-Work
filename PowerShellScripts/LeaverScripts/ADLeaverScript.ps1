@@ -1,3 +1,5 @@
+#Requires -Modules ActiveDirectory
+
 <#
 Leaver processing for on-prem AD users. Run this script first.
   - Accepts samAccountName
