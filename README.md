@@ -11,9 +11,9 @@ A set of production automation tools that handle real, repetitive administrative
 
 | Tool | Purpose |
 |------|---------|
-| [`LeaverScripts/`](./PowerShellScripts/LeaverScripts) | End-to-end offboarding suite covering AD account disablement and cleanup, Exchange Online mailbox conversion and forwarding, and file server archiving — run in sequence from a single wrapper. |
-| [`RotationScripts/`](./PowerShellScripts/RotationScripts) | Automates moving trainees between departments on a rotation cycle, correcting AD group membership, attributes, and shared mailbox access from a JSON configuration file. |
-| [`MailboxPermissionsScripts/`](./PowerShellScripts/MailboxPermissionsScripts) | Tools to migrate mailbox delegate access between Full Access and folder-level permissions, plus a read-only auditing tool to report on existing access. |
+| [`LeaverScripts/`](./PowerShellScripts/LeaverScripts) | End-to-end offboarding suite covering AD account disablement and cleanup, Exchange Online mailbox conversion and forwarding, and file server archiving - run in sequence from a single wrapper |
+| [`RotationScripts/`](./PowerShellScripts/RotationScripts) | Automates moving trainees between departments on a rotation cycle, correcting AD group membership, attributes, and shared mailbox access from a JSON configuration file |
+| [`MailboxPermissionsScripts/`](./PowerShellScripts/MailboxPermissionsScripts) | Tools to migrate mailbox delegate access between Full Access and folder-level permissions, plus a read-only auditing tool to report on existing access |
 
 Each folder has its own README with full usage details, input formats, prerequisites, and safety notes.
 
@@ -25,8 +25,8 @@ Academic and personal projects from my Computer Science degree and self-directed
 
 | Project | Description |
 |---------|-------------|
-| `final-year-project` | _[Add a one-line description — e.g. tech stack and what it does]_ |
-| `Memento` | _[Add a one-line description]_ |
-| `MyCommand` | _[Add a one-line description]_ |
-| `Shape Creator` | _[Add a one-line description]_ |
-| `musicTriviaX` | _[Add a one-line description]_ |
+| `final-year-project` | Full stack web application for football coaching that was completed for my final year project assignment. Utilised the MERN stack |
+| `Memento` | C# console SVG drawing tool demonstrating the Memento design pattern with undo/redo via state snapshots |
+| `MyCommand` | C# console SVG drawing tool demonstrating the Command design pattern with undo/redo support |
+| `Shape Creator` | Interactive C# console SVG builder with shape creation, editing, and deletion, exporting to an SVG file |
+| `musicTriviaX` | Full stack application. It is a music trivia game. Utilises HTML, CSS and JavaScript and the Spotify API |
