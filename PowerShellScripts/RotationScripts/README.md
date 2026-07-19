@@ -1,6 +1,6 @@
 # Trainee Rotation Automation
 
-Automates moving trainees between departments on a rotation cycle. For each trainee it corrects Active Directory group membership, updates the Department and Office attributes, and adjusts shared mailbox access — all driven by a single JSON configuration file so the rotation logic can be changed without touching the script.
+Automates moving trainees between departments on a rotation cycle. For each trainee it corrects Active Directory group membership, updates the Department and Office attributes, and adjusts shared mailbox access - all driven by a single JSON configuration file so the rotation logic can be changed without touching the script.
 
 ## What it does
 
@@ -47,12 +47,12 @@ asmith,Department2
 
 `RotationConfig.json` controls all the rotation logic:
 
-- **RotationGroups** — the full set of department groups a trainee may belong to (all are removed before the correct ones are re-added).
-- **DepartmentGroups** — the groups to apply for each department.
-- **DepartmentNameMap** — the value written to the AD `Department` attribute.
-- **DepartmentOfficeMap** — the value written to the AD `Office` attribute.
-- **DepartmentAliases** — shorthand or alternative spellings mapped to canonical department names.
-- **SharedMailbox** — the shared mailbox identity and which departments should have access to it.
+- **RotationGroups** - the full set of department groups a trainee may belong to (all are removed before the correct ones are re-added).
+- **DepartmentGroups** - the groups to apply for each department.
+- **DepartmentNameMap** - the value written to the AD `Department` attribute.
+- **DepartmentOfficeMap** - the value written to the AD `Office` attribute.
+- **DepartmentAliases** - shorthand or alternative spellings mapped to canonical department names.
+- **SharedMailbox** - the shared mailbox identity and which departments should have access to it.
 
 ## Requirements
 
