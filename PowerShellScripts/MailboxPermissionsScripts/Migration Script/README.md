@@ -8,10 +8,10 @@ Each operation targets a delegate and a mailbox, and runs in one of four directi
 
 | Direction | Action |
 |-----------|--------|
-| 1 | **Migrate Full Access to Folder Permissions** — removes Full Mailbox Access and grants `PublishingEditor` on every folder (top level and subfolders), skipping system and hidden folders. |
-| 2 | **Revert Folder Permissions to Full Access** — reinstates Full Mailbox Access with automapping and removes the folder-level permissions, preserving Calendar permissions so delegate calendar settings survive the revert. |
-| 3 | **Remove Folder Permissions only** — strips folder-level permissions without granting Full Access. |
-| 4 | **Remove Full Access only** — removes Full Mailbox Access without adding folder permissions. |
+| 1 | **Migrate Full Access to Folder Permissions** - removes Full Mailbox Access and grants `PublishingEditor` on every folder (top level and subfolders), skipping system and hidden folders. |
+| 2 | **Revert Folder Permissions to Full Access** - reinstates Full Mailbox Access with automapping and removes the folder-level permissions, preserving Calendar permissions so delegate calendar settings survive the revert. |
+| 3 | **Remove Folder Permissions only** - strips folder-level permissions without granting Full Access. |
+| 4 | **Remove Full Access only** - removes Full Mailbox Access without adding folder permissions. |
 
 Folder operations are resolved by folder ID, so folders containing special characters are handled safely, and known system or hidden folders (Recoverable Items, Sync Issues, and similar) are skipped.
 
@@ -33,8 +33,8 @@ Double-click `IndividualMigrationScript.bat`, or run the script directly:
 
 On launch you choose an input mode:
 
-- **Manual entry** — queue one or more operations interactively. The queue is shown back to you and requires confirmation before any of it runs.
-- **CSV import** — bulk process every entry in `MigrationInput.csv`.
+- **Manual entry** - queue one or more operations interactively. The queue is shown back to you and requires confirmation before any of it runs.
+- **CSV import** - bulk process every entry in `MigrationInput.csv`.
 
 ## Input format
 
