@@ -6,7 +6,7 @@ Tooling for managing and auditing delegate access to mailboxes in Exchange Onlin
 
 | Folder | Purpose |
 |--------|---------|
-| `Migration Script/` | Applies and changes delegate access — migrating between Full Mailbox Access and folder-level permissions, or removing either. |
+| `Migration Script/` | Applies and changes delegate access - migrating between Full Mailbox Access and folder-level permissions, or removing either. |
 | `Check Script/` | Read-only auditing tool that reports the current Full Access, folder-level, and private-items permissions on a mailbox. |
 
 ## Background
