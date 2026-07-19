@@ -1,14 +1,14 @@
 # Mailbox Permissions Checker
 
-A read-only auditing tool for Exchange Online mailboxes. Reports what delegate access exists on a mailbox across three dimensions — Full Mailbox Access, folder-level permissions, and private-items (calendar) access — without making any changes.
+A read-only auditing tool for Exchange Online mailboxes. Reports what delegate access exists on a mailbox across three dimensions - Full Mailbox Access, folder-level permissions, and private-items (calendar) access - without making any changes.
 
 ## What it does
 
 For a given mailbox you choose which checks to run. The tool can report on any combination of:
 
-- **Full Mailbox Access** — non-inherited Full Access grants, excluding system accounts.
-- **Folder Permissions** — per-folder access rights across every folder in the mailbox, resolved by folder ID so folders with special characters in their names are handled correctly.
-- **Private Items** — whether a delegate can view private calendar items.
+- **Full Mailbox Access** - non-inherited Full Access grants, excluding system accounts.
+- **Folder Permissions** - per-folder access rights across every folder in the mailbox, resolved by folder ID so folders with special characters in their names are handled correctly.
+- **Private Items** - whether a delegate can view private calendar items.
 
 You can check a specific delegate, or leave the delegate blank (or `none`) to report on everyone with access to the mailbox. Results are printed to the console grouped by mailbox and check type, and exported to a timestamped CSV report.
 
@@ -30,8 +30,8 @@ Double-click `MailboxPermissionsCheckScript.bat`, or run the script directly:
 
 On launch you choose an input mode:
 
-- **Manual entry** — queue one or more checks interactively, then process them together.
-- **CSV import** — bulk process every entry in `MailboxPermissionCheckInput.csv`.
+- **Manual entry** - queue one or more checks interactively, then process them together.
+- **CSV import** - bulk process every entry in `MailboxPermissionCheckInput.csv`.
 
 ## Input format
 
@@ -62,4 +62,4 @@ none,feeearner2@company.com,1
 
 ## Notes
 
-This tool is **read-only** — it reports permissions and never modifies them. A timestamped results CSV is written to the script folder on completion. To apply or change permissions, use the Migration Script in the parent folder.
+This tool is **read-only** - it reports permissions and never modifies them. A timestamped results CSV is written to the script folder on completion. To apply or change permissions, use the Migration Script in the parent folder.
