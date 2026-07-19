@@ -13,8 +13,8 @@ Tooling for managing and auditing delegate access to mailboxes in Exchange Onlin
 
 In a delegated mailbox setup (for example, a secretary acting on behalf of a fee earner), access can be granted in two broad ways:
 
-- **Full Mailbox Access** — the delegate effectively has the whole mailbox. Simple, but coarse: there is no way to withhold individual folders.
-- **Folder-level permissions** — access is granted per folder (e.g. `PublishingEditor` on the inbox and subfolders), which allows finer control over what a delegate can and cannot see.
+- **Full Mailbox Access** - the delegate effectively has the whole mailbox. Simple, but coarse: there is no way to withhold individual folders.
+- **Folder-level permissions** - access is granted per folder (e.g. `PublishingEditor` on the inbox and subfolders), which allows finer control over what a delegate can and cannot see.
 
 The Migration Script handles the transition between these two models in either direction. The Check Script is used alongside it to confirm the current state before and after changes, and to support access reviews.
 
