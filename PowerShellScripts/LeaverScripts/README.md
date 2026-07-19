@@ -6,9 +6,9 @@ An end-to-end offboarding suite for processing leavers across on-premises Active
 
 The wrapper runs three scripts in order. Each one previews its changes with `-WhatIf` first, then waits for you to type `RUN` or `SKIP` before doing anything live.
 
-1. **ADLeaverScript.ps1** — On-premises Active Directory stage. Disables the account, sets an account expiry date, removes the user from all groups except a safe allowlist (e.g. `Domain Users`, `MailboxLicence`), clears personal attributes, hides the user from the address book, and moves the object to the Expired OU.
-2. **ExchangeLeaverScript.ps1** — Exchange Online stage. Converts the mailbox to a shared mailbox, configures an Out of Office message, sets internal mail forwarding, and removes licensing groups once the shared conversion is confirmed. Includes a safety gate that refuses to process accounts still enabled in AD, so the AD stage must run first.
-3. **FileServersLeaverScript.ps1** — File server stage. Deletes FSLogix profile and ODFC containers (2019 and 2025, standard and IT), archives the user's Documents and "My Binders" folders, and relocates Downloads. Uses `robocopy` with long-path support for reliable moves of deep folder structures.
+1. **ADLeaverScript.ps1** - On-premises Active Directory stage. Disables the account, sets an account expiry date, removes the user from all groups except a safe allowlist (e.g. `Domain Users`, `MailboxLicence`), clears personal attributes, hides the user from the address book, and moves the object to the Expired OU.
+2. **ExchangeLeaverScript.ps1** - Exchange Online stage. Converts the mailbox to a shared mailbox, configures an Out of Office message, sets internal mail forwarding, and removes licensing groups once the shared conversion is confirmed. Includes a safety gate that refuses to process accounts still enabled in AD, so the AD stage must run first.
+3. **FileServersLeaverScript.ps1** - File server stage. Deletes FSLogix profile and ODFC containers (2019 and 2025, standard and IT), archives the user's Documents and "My Binders" folders, and relocates Downloads. Uses `robocopy` with long-path support for reliable moves of deep folder structures.
 
 ## Files
 
@@ -68,4 +68,4 @@ Install-Module ExchangeOnlineManagement -Scope CurrentUser
 
 ## Notes
 
-The file server roots in `FileServersLeaverScript.ps1` (FSLogix profile stores, archive locations, redirected folder roots) are intentionally hardcoded — they map to fixed infrastructure paths rather than anything relative to this repository. The `LogFolder` defaults are parameters and can be overridden at runtime.
+The file server roots in `FileServersLeaverScript.ps1` (FSLogix profile stores, archive locations, redirected folder roots) are intentionally hardcoded - they map to fixed infrastructure paths rather than anything relative to this repository. The `LogFolder` defaults are parameters and can be overridden at runtime.
